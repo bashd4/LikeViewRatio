@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Like View Ratio for Youtube",
+  "description": "Add an extra information panel below youtube videos displaying the like to view ratio",
+  "version": "1.0",
+
+  "author": "ben99944@gmail.com",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+    "matches": ["https://www.youtube.com/watch?*"],
+    "js" : ["content-script.js"]
+    }
+  ]
+}
